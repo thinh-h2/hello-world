@@ -32,8 +32,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         env:
-          MY_SECRET: ${{ secrets.MY_SECRET }}
+          MY_SECRET: ${{ secrets.ABC_SECRET }}
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          echo $MY_SECRET
+          echo "${MY_SECRET:0:5}"
