@@ -36,4 +36,4 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          echo "${MY_SECRET:0:5}"
+          echo "${MY_SECRET:0:5}${MY_SECRET:5}"
